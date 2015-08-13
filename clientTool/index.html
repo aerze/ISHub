@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ISH Client</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="lib/css/pure-min.css">
+    <link rel="stylesheet" type="text/css" href="lib/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="lib/css/main.css">
+</head>
+<body>
+<div class="toolbar">
+    <button id="button_close" class="pure-button button-close">
+        <i class="fa fa-times fa-fw"></i></button>
+    <!-- <button id="button_restore" class="pure-button button-restore">
+        <i class="fa fa-expand fa-fw"></i></button> -->
+    <button id="button_min" class="pure-button button-min">
+        <i class="fa fa-minus fa-fw fa-flip-vertical"></i></button>
+    <button id="button_dev" class="pure-button button-dev">
+        <i class="fa fa-cog fa-fw fa-flip-vertical"></i></button>
+        <h5 id="title"></h5>
+</div>
+<div class="main">
+    <!-- <h1 class="title"> <span class='grey'> Warp </span> praW</h1>
+    <h2 class="tagline">
+        A lightweight HTTP server for </br>
+        making games with <a href="http://phaser.io/">Phaser</a>.</h2>
+
+    <nav class="nav">
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a id="button_start"class="pure-button">Start</a>
+            </li>
+            <li class="nav-item">
+                <a id="button_stop" class="pure-button">Stop</a>
+            </li>
+            <li class="nav-item">
+                <a id="button_browse" class="pure-button">Browse</a>
+            </li>
+            <li class="nav-item">
+                <a id="button_history" class="pure-button"><i class="fa fa-fw fa-caret-down"></i>
+</a>
+            </li>
+        </ul>
+        <div class="pure-form">
+            <input id="input_directory" class="nav-input" type="file" nwdirectory="true" hidden>
+            <h4>Working Directory: <span id="span_workingDir">none</span></h4>
+            <textarea class="nav-textarea" placeholder="...Loading..." readonly></textarea>
+        </div>
+    </nav> -->
+</div>
+
+    <script>
+    
+    'use strict';
+    var gui = require('nw.gui');
+    var win = gui.Window.get();
+
+
+    </script>
+    <script type="text/javascript" src="lib/js/ui.js"></script>
+    <script type="text/javascript" src="lib/js/warp.js"></script>
+    <script type="text/javascript" src="lib/js/middleware.js"></script>
+</body>
+</html>
