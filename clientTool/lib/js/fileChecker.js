@@ -11,7 +11,6 @@ var files = {
     init: function () {
         var files = fs.readdirSync(rootDir);
         
-        console.log(files);
         set.champ = (files.indexOf('Champions') >= 0);
         set.global = (files.indexOf('Global') >= 0);
 

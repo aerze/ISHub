@@ -47,3 +47,42 @@ UI.buttons.close.onclick = function () {
 UI.buttons.min.onclick = function () {
     win.minimize();
 };
+
+
+UI.menu = {
+    globalSets: $('#globalSets'),
+    champSets: $('#champSets'),
+    removeLoading: function () {
+        $('#loading').remove();
+    },
+    // UI.menu.append('global', itemSet.title);
+    appendItem: function (group, text, id) {
+        var li = '<li class="pure-menu-item"> '+
+            '<a href="#" id="'+ id +'" class="pure-menu-link">'+ text +'</a></li>';
+        var $li = $(li);
+
+
+        if (group === 'global') {
+            $('#globalSets').append($li);
+        } else {
+            $('#champSet_'+group).append($li);
+        }
+    },
+
+
+    appendGroup: function (name) {
+        var header = $('<li id="champHeader_'+name+'" class="pure-menu-heading">'+name+'</li>');
+        var group = $('<li id="champSet_'+name+'"></li>');
+
+        this.champSets.append(group);
+        group.before(header);
+    }
+};
+
+UI.main = {
+    main: $('#main'),
+    show: function (itemSet) {
+        var code = $('<code>' + JSON.stringify(itemSet, null, '\t').replace(/\n/g, '<br/>') +'</code>');
+        this.main.html(code);
+    }
+};

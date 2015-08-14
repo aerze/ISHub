@@ -1,8 +1,11 @@
 {
     "browser": true,
     "node": true,
+    "jquery": true,
     "globals": {
         "gui": true,
-        "win": true
+        "win": true,
+        "_": true,
+        "UI": true
     }
 }
