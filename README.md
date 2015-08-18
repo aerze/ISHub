@@ -24,10 +24,10 @@ Download Client
 There are currently no released binaries of fISH Client available for download.
 You may however download the project source and create a build by yourself with the steps below.
 
-Building Warp
+Building the fISH Client
 -------------
 
-To build Warp for your platform from the latest project source, you need to have `nodeJS` and `npm` installed on your machine.
+To build fISH for your platform from the latest project source, you need to have `nodeJS` and `npm` installed on your machine.
 
 You will need to have the grunt cli tool installed to run grunt, install that with:
 
