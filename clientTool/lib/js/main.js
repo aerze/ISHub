@@ -21,6 +21,10 @@ fish.router = function(route) {
 
     } else if (route === 'importItemSet') {
         $('.button-collapse').sideNav('hide');
+
+    } else if (route === 'exportItemSet') {
+        $('.button-collapse').sideNav('hide');
+
     } else if (route.indexOf('/') > -1) {
         $('.button-collapse').sideNav('hide');
 
@@ -38,8 +42,6 @@ fish.router = function(route) {
     } else {
         UI.nav.setList(route);
     }
-
-
 };
 
 fish.file = {
