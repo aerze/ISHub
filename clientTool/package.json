@@ -12,8 +12,6 @@
     "position": "center",
     "min_width": 600,
     "min_height": 400,
-    "max_width": 600,
-    "max_height": 400,
-    "resizable": false
+    "resizable": true
   }
 }
