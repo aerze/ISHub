@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ISH Client</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="css/pure-min.css">
+    <link rel="stylesheet" type="text/css" href="materialize/css/materialize.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/linear-icons.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/main.css"> -->
+</head>
+<body>
+    <div id="app"></div>
+    <script>
+    'use strict';
+    // Set global node-webkit variables
+    var GUI = require('nw.gui');
+    var WIN = GUI.Window.get();
+    WIN.showDevTools();
+    </script>
+
+
+    <script type="text/javascript" src="libs/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="libs/react.js"></script>
+    <script type="text/javascript" src="libs/react-dom.js"></script>
+    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+    <!-- <script type="text/javascript" src="lib/js/underscore-min.js"></script> -->
+    <!-- <script type="text/javascript" src="lib/js/ui.js"></script> -->
+    <!-- <script type="text/javascript" src="lib/js/main.js"></script> -->
+    <script type="text/javascript" src="js/bundle.js"></script>
+
+    <script>
+    /*globals $, UI */
+    // Init Material things
+    // $('.button-menu').sideNav();
+    // UI.nav.setList('main');
+    </script>
+
+</body>
+</html>

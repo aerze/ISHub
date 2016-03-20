@@ -7,15 +7,16 @@ module.exports = function (grunt){
     grunt.initConfig({
         nwjs: {
             options: {
-                platforms: ['win', 'linux'],
+                version: '0.12.3',
+                platforms: ['win64'],
                 buildDir: './builds'
             },
-            src: ['./clientTool/**/*']
+            src: ['./client/dist/**/*']
         },
 
         watch: {
             main: {
-                files: ['./clientTool/**'],
+                files: ['./client/dist/**'],
                 tasks: ['nwjs']
             }
         }

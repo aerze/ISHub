@@ -1,0 +1,17 @@
+{
+  "name": "fISH Client",
+  "main": "index.html",
+  "description": "League of Legends Item Set Hub Client- Create and Share League Item Sets",
+  "version": "0.0.1",
+  "window": {
+    "title": "fISH Client",
+    "toolbar": false,
+    "frame": false,
+    "width": 900,
+    "height": 600,
+    "position": "center",
+    "min_width": 900,
+    "min_height": 600,
+    "resizable": true
+  }
+}

@@ -1,0 +1,66 @@
+
+
+body {
+    overflow: hidden;
+    background: rgb(61, 79, 93);
+    color: #fff;
+    width:100%;
+    height:100%;
+    /*-webkit-app-region: drag;*/
+}
+
+
+/*WINDOW AREA > Not toolbar*/
+.windowArea {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 32px;
+}
+
+.windowArea .side-nav {
+    top: 26px;
+}
+
+
+/*Side Nav*/
+.button-collapse {
+    font-size: 2rem;
+    position: fixed;
+    padding: 0 10px;
+    background: rgba(15, 52, 89, 0.3);
+    display: none;
+    color: white;
+}
+
+
+
+header, main, footer, .windowArea {
+    padding-left: 240px;
+}
+
+@media only screen and (max-width : 960px) {
+    header, main, footer, .windowArea {
+        padding-left: 0;
+    }
+
+    .button-collapse {
+        display: inline;
+    }
+}
+
+
+
+/*Content (right) Window*/
+
+.content {
+    height: 99%;
+    overflow: scroll;
+    color: white;
+    padding: 2rem;
+    padding-left: 3rem;
+}
+
+.json {
+    font-size: 1.2rem;
+}
