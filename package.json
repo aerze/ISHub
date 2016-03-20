@@ -1,6 +1,6 @@
 {
   "name": "ISHub",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "description": "League of Legends Item Set Hub - Create and Share League Item Sets",
   "private": true,
   "scripts": {

@@ -1,7 +1,8 @@
 
 var ReactDOM = require('react-dom');
-// var page = require('page'); // load routes
 var ISHClient = require('./components/ISHClient');
+
+// var page = require('page'); // load routes
 
 
 
@@ -22,4 +23,3 @@ var ISHClient = require('./components/ISHClient');
 
 ReactDOM.render(<ISHClient/>, document.getElementById('app'));
 
-// require('./ui');

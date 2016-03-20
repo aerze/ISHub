@@ -46,9 +46,10 @@
 
 	'use strict';
 
-	var ReactDOM = __webpack_require__(12);
+	var ReactDOM = __webpack_require__(11);
+	var ISHClient = __webpack_require__(4);
+
 	// var page = require('page'); // load routes
-	var ISHClient = __webpack_require__(6);
 
 	// var utils = require('./utils');
 
@@ -64,8 +65,6 @@
 	// page();
 
 	ReactDOM.render(React.createElement(ISHClient, null), document.getElementById('app'));
-
-	// require('./ui');
 
 /***/ },
 /* 1 */
@@ -381,43 +380,23 @@
 /* 3 */
 /***/ function(module, exports) {
 
-	module.exports = GUI;
-
-/***/ },
-/* 4 */
-/***/ function(module, exports) {
-
 	module.exports = React;
 
 /***/ },
-/* 5 */
-/***/ function(module, exports) {
-
-	module.exports = jQuery;
-
-/***/ },
-/* 6 */
+/* 4 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	__webpack_require__(10);
+	__webpack_require__(8);
 
-	var _react = __webpack_require__(4);
+	var _react = __webpack_require__(3);
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Toolbar = __webpack_require__(7);
+	var _Toolbar = __webpack_require__(5);
 
 	var _Toolbar2 = _interopRequireDefault(_Toolbar);
-
-	var _GUI = __webpack_require__(3);
-
-	var _GUI2 = _interopRequireDefault(_GUI);
-
-	var _jquery = __webpack_require__(5);
-
-	var _jquery2 = _interopRequireDefault(_jquery);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -425,7 +404,7 @@
 	  displayName: 'ISHClient',
 
 	  componentDidMount: function componentDidMount() {
-	    (0, _jquery2.default)('.button-menu').sideNav();
+	    $('.button-menu').sideNav();
 	  },
 	  render: function render() {
 	    return _react2.default.createElement(
@@ -490,22 +469,22 @@
 	module.exports = ISHClient;
 
 /***/ },
-/* 7 */
+/* 5 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	__webpack_require__(11);
+	__webpack_require__(9);
 
-	var _react = __webpack_require__(4);
+	var _react = __webpack_require__(3);
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _GUI = __webpack_require__(3);
+	var _GUI = __webpack_require__(10);
 
 	var _GUI2 = _interopRequireDefault(_GUI);
 
-	var _jquery = __webpack_require__(5);
+	var _jquery = __webpack_require__(12);
 
 	var _jquery2 = _interopRequireDefault(_jquery);
 
@@ -575,7 +554,7 @@
 	module.exports = Toolbar;
 
 /***/ },
-/* 8 */
+/* 6 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(1)();
@@ -589,7 +568,7 @@
 
 
 /***/ },
-/* 9 */
+/* 7 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(1)();
@@ -597,19 +576,19 @@
 
 
 	// module
-	exports.push([module.id, ".toolbar {\n  width: 100%;\n  height: 32px;\n  background: #333;\n  position: fixed;\n  top: 0;\n  z-index: 10000;\n  -webkit-app-region: drag;\n}\n.toolbar .title {\n  float: left;\n  margin: 0.6em 1em 0;\n}\n.toolbar .pure-button {\n  padding: 0px;\n  height: inherit;\n  width: 45px;\n  float: right;\n  border-radius: 0px;\n  -webkit-app-region: no-drag;\n  background: rgba(0,0,0,0);\n  color: #eee;\n  font-size: 1.3em;\n}\n.toolbar .pure-button .lnr {\n  position: relative;\n  bottom: -1.5px;\n}\n.toolbar .pure-button.button-close:hover {\n  background: #ca3c3c;\n}\n.toolbar .pure-button.button-restore:hover {\n  background: #45c15a;\n}\n.toolbar .pure-button.button-restore:hover {\n  background: #45c15a;\n}\n.toolbar .pure-button.button-min:hover {\n  background: #747474;\n}\n.toolbar .pure-button.button-min i {\n  position: relative;\n  bottom: 0px;\n}\n.toolbar .pure-button.button-menu {\n  float: left;\n}\n.toolbar .pure-button.button-menu:hover {\n  background: #4ca338;\n}\n.toolbar .pure-button.button-menu i {\n  font-size: 28px;\n}\n.toolbar .pure-button.button-dev {\n  float: left;\n}\n.toolbar .pure-button.button-dev:hover {\n  background: #fa8e00;\n}\n.toolbar .pure-button.button-dev i {\n  position: relative;\n  bottom: -1.5px;\n}\n", ""]);
+	exports.push([module.id, ".toolbar {\n  width: 100%;\n  height: 32px;\n  background: #333;\n  position: fixed;\n  top: 0;\n  z-index: 10000;\n  -webkit-app-region: drag;\n}\n.toolbar .title {\n  float: left;\n  margin: 0.6em 1em 0;\n}\n.toolbar .pure-button {\n  padding: 0px;\n  height: inherit;\n  width: 45px;\n  float: right;\n  border-radius: 0px;\n  -webkit-app-region: no-drag;\n  background: rgba(0,0,0,0);\n  color: #eee;\n  font-size: 1.3em;\n}\n.toolbar .pure-button .lnr {\n  position: relative;\n  bottom: -1.5px;\n}\n.toolbar .pure-button.button-close:hover {\n  background: #ca3c3c;\n}\n.toolbar .pure-button.button-restore:hover {\n  background: #45c15a;\n}\n.toolbar .pure-button.button-restore:hover {\n  background: #45c15a;\n}\n.toolbar .pure-button.button-min:hover {\n  background: #747474;\n}\n.toolbar .pure-button.button-min .lnr {\n  bottom: 0px;\n}\n.toolbar .pure-button.button-menu {\n  float: left;\n}\n.toolbar .pure-button.button-menu:hover {\n  background: #4ca338;\n}\n.toolbar .pure-button.button-menu .lnr {\n  font-size: 28px;\n  bottom: -1px;\n}\n.toolbar .pure-button.button-dev {\n  float: left;\n}\n.toolbar .pure-button.button-dev:hover {\n  background: #fa8e00;\n}\n.toolbar .pure-button.button-dev i {\n  position: relative;\n  bottom: -1.5px;\n}\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 10 */
+/* 8 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(8);
+	var content = __webpack_require__(6);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(2)(content, {});
@@ -629,13 +608,13 @@
 	}
 
 /***/ },
-/* 11 */
+/* 9 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(9);
+	var content = __webpack_require__(7);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(2)(content, {});
@@ -655,10 +634,22 @@
 	}
 
 /***/ },
-/* 12 */
+/* 10 */
+/***/ function(module, exports) {
+
+	module.exports = GUI;
+
+/***/ },
+/* 11 */
 /***/ function(module, exports) {
 
 	module.exports = ReactDOM;
+
+/***/ },
+/* 12 */
+/***/ function(module, exports) {
+
+	module.exports = jQuery;
 
 /***/ }
 /******/ ]);
