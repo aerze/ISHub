@@ -2,7 +2,7 @@ var path = require('path');
 var webpack = require('webpack');
 
 module.exports = {
-  entry: path.join(__dirname, "client/src/main.js"),
+  entry: path.join(__dirname, "client/src/main.jsx"),
   module: {
     loaders: [
       {
