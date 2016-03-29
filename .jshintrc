@@ -1,4 +1,7 @@
 {
     "node": true,
-    "devel": true
+    "devel": true,
+    global: {
+      "pull": true
+    }
 }

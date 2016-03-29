@@ -26,7 +26,7 @@ module.exports = {
       //but get it from a global 'React' variable
       'react': 'React',
       'react-dom': 'ReactDOM',
-      'jquery': 'jQuery',
+      'pull': 'require',
       'GUI': 'GUI',
       'WIN': 'WIN'
   },

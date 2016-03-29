@@ -2,8 +2,8 @@
 
 import './toolbar.styl';
 import React from 'react';
-import GUI from 'GUI';
-import $ from 'jquery';
+import { connect } from 'react-redux';
+import sidenav from '../../actions/SideNavActions';
 
 var Toolbar = React.createClass({
   displayName: 'Toolbar',
@@ -26,22 +26,21 @@ var Toolbar = React.createClass({
     this.setState({title: document.title});
   },
 
-  componentDidMount() {
-    $('.button-menu').sideNav();
-  },
-
   render() {
     return (
       <div className="toolbar">
         <button onClick={this.close}
           className="pure-button button-close">
           <i className="lnr lnr-cross"></i></button>
+
         <button onClick={this.minimize}
           className="pure-button button-min">
           <i className="lnr">—</i></button>
-        <button data-activates="slide-out"
+
+        <button onClick={this.props.toggle}
           className="pure-button button-menu">
           <i className="lnr lnr-menu"></i></button>
+
         <h6 className="title" id="title">{this.state.title}</h6>
 
         <button onClick={this.devTools}
@@ -52,4 +51,23 @@ var Toolbar = React.createClass({
   }
 });
 
-module.exports = Toolbar;
+// filters state to props
+var filter = function (state) {
+  return {}
+};
+
+var map = function (dispatch, props) {
+  return {
+    open() {
+      dispatch(sidenav.open());
+    },
+    close() {
+      dispatch(sidenav.close());
+    },
+    toggle() {
+      dispatch(sidenav.toggle());
+    }
+  };
+};
+
+module.exports = connect(filter, map)(Toolbar);
